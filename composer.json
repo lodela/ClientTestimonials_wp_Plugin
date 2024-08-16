@@ -1,0 +1,29 @@
+{
+    "name": "norberto-lodela/client-testimonials",
+    "description": "A WordPress plugin to manage and display client testimonials.",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Norberto Lodela",
+            "email": "lodela.n@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ClientTestimonials\\": "includes/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit --configuration tests/phpunit.xml"
+    },
+    "extra": {
+        "installer-paths": {
+            "wp-content/plugins/{$name}/": ["type:wordpress-plugin"]
+        }
+    }
+}
