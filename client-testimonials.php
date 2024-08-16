@@ -1,14 +1,19 @@
 <?php
 /*
 Plugin Name: Client Testimonials
-Description: A simple plugin to add and display client testimonials on your site.
+Plugin URI: https://github.com/lodela/ClientTestimonials_wp_Plugin
+Description: A plugin to manage and display client testimonials.
 Version: 1.0
-Author: [Your Name]
+Author: Norberto Lodela
+License: GPL2
 */
 
 if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly
 }
+
+// Include the custom post type class
+require_once plugin_dir_path( __FILE__ ) . 'includes/class-client-testimonials-cpt.php';
 
 // Include admin and frontend files
 include_once plugin_dir_path( __FILE__ ) . 'includes/admin/testimonials-admin.php';
