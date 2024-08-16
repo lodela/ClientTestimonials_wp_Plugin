@@ -1,4 +1,28 @@
-/* style.css */
-.ct-testimonials {
-    /* Styles for the testimonials section */
+.ct-testimonials-carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.ct-testimonial {
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+
+.ct-testimonial img {
+    max-width: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.ct-testimonial h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.ct-testimonial p {
+    font-size: 1em;
+    color: #555;
 }
